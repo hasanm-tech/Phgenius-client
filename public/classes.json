@@ -1,0 +1,125 @@
+{
+    "classes": [
+      {
+        "id": 1,
+        "name": "Mastering DSLR Photography",
+        "img": "https://img.freepik.com/free-photo/medium-shot-man-looking-camera_23-2148503491.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.1.1249051351.1685387329&semt=ais",
+        "instructor": "John Doe",
+        "availableSeats": 10,
+        "price": 99.99,
+        "students": 20,
+        "mentor": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 2,
+        "name": "Portrait Photography: Capturing Emotions",
+        "instructor": "Jane Smith",
+        "img":"https://img.freepik.com/free-photo/woman-with-dslr-camera_1098-19636.jpg?w=740&t=st=1686570210~exp=1686570810~hmac=ec94e884179db9cf9275445f7848785597505c54c4e8d974ea97b80fb8d9344a",
+        "availableSeats": 0,
+        "price": 129.99,
+        "students": 15,
+        "mentor":"https://img.freepik.com/free-photo/profile-handsome-businessman-glasses-smiling-short-haired-boss-white-shirt-grey-tie-keeping-documents-his-hands_549566-469.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 3,
+        "name": "Landscape Photography: Finding Beauty in Nature",
+        "img": "https://img.freepik.com/free-photo/young-woman-traveler-journey-concept_53876-15933.jpg?w=740&t=st=1686569437~exp=1686570037~hmac=8c71781ae01653140131be239163b3d8c271c46e5dfbefa2c48ae050597c38a3",
+        "instructor": "Alex Johnson",
+        "availableSeats": 5,
+        "price": 79.99,
+        "students": 18,
+        "mentor":"https://img.freepik.com/free-photo/beautiful-young-man-student-businessman-jacket-holds-his-arms-crossed-isolated-light-grey-wall_231208-6135.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 4,
+        "name": "Night Photography: Mastering Low-Light Shots",
+        "img":"https://img.freepik.com/free-photo/silhoette-two-people-entering-dark-shady-underground-building_181624-4456.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=ais",
+        "instructor": "Michael Anderson",
+        "availableSeats": 3,
+        "price": 89.99,
+        "students": 12,
+        "mentor":"https://img.freepik.com/free-photo/close-up-colleagues-learning-work_23-2149300706.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 5,
+        "name": "Street Photography: Capturing the Urban Essence",
+        "instructor": "Emily Thompson",
+        "img":"https://img.freepik.com/free-photo/middle-age-friends-having-fun-together_23-2149263725.jpg?w=740&t=st=1686570043~exp=1686570643~hmac=067b503e02f28124d80ffafde7a582bd00b23b847b78ffa0093259b21ca1a054",
+        "availableSeats": 8,
+        "price": 109.99,
+        "students": 17,
+        "mentor":"https://img.freepik.com/free-photo/elegant-young-teacher-with-brunette-hair-stylish-light-shirt-black-striped-suit-glasses-holding-writings-pen-giving-lecture_197531-24666.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 6,
+        "name": "Food Photography: Creating Appetizing Images",
+        "instructor": "Robert Davis",
+        "img": "https://img.freepik.com/free-photo/woman-making-photo-meal-her-phone_1303-18328.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=ais",
+        "availableSeats": 2,
+        "price": 94.99,
+        "students": 10,
+        "mentor":"https://img.freepik.com/free-photo/talking-audience_1098-14094.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 7,
+        "name": "Wildlife Photography: Capturing Nature's Beauty",
+        "instructor": "Sarah Wilson",
+        "img":"https://img.freepik.com/free-photo/yellow-lily-flowers_181624-4524.jpg?w=740&t=st=1686570246~exp=1686570846~hmac=78ba857674a12651c494a55a76170a91bd475b25f96b2036767af7f89d162b6c",
+        "availableSeats": 4,
+        "price": 119.99,
+        "students": 14,
+        "mentor":"https://img.freepik.com/free-photo/talking-audience_1098-14094.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 8,
+        "name": "Fashion Photography: The Art of Styling",
+        "instructor": "David Carter",
+        "img" :"https://img.freepik.com/free-photo/pensive-redhead-hipster-male-with-long-luxuriant-hair-full-beard-dressed-casual-clothes-standing-with-hand-chin-studio-looking-away-isolated-dark-background_613910-20147.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.1.1249051351.1685387329&semt=ais",
+        "availableSeats": 6,
+        "price": 79.99,
+        "students": 11,
+        "mentor":"https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 9,
+        "name": "Travel Photography: Exploring the World Through Your Lens",
+        "instructor": "Olivia Roberts",
+        "img":"https://img.freepik.com/free-photo/traveller-pointing-globe_23-2147732613.jpg?w=740&t=st=1686570131~exp=1686570731~hmac=62d6cb2e9b7e872aa09e3caf6fa1aa25ee22672b7a978aa62851ac0d5089678f",
+        "availableSeats": 7,
+        "price": 109.99,
+        "students": 16,
+        "mentor":"https://img.freepik.com/free-photo/medium-shot-fit-man-with-camera_23-2149249511.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 10,
+        "name": "Product Photography: Showcasing Items in the Best Light",
+        "instructor": "Daniel Johnson",
+        "img":"https://img.freepik.com/free-photo/minimalist-camera-lens-desk-with-copy-space_23-2148424430.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=ais",
+        "availableSeats": 3,
+        "price": 89.99,
+        "students": 9,
+        "mentor":"https://img.freepik.com/free-photo/teacher-young-cute-handsome-instructor-class-teaching-remotely-camera-finished-class_140725-167248.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.1.1249051351.1685387329&semt=sph"
+    },
+      {
+        "id": 11,
+        "name": "Black and White Photography: Mastering Monochrome",
+        "instructor": "Sophia Adams",
+        "img":"https://img.freepik.com/free-photo/photographer-checking-his-camera-darkness_114579-13061.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=ais",
+        "availableSeats": 5,
+        "price": 99.99,
+        "students": 13,
+        "mentor":"https://img.freepik.com/free-photo/young-hipster-man-with-body-black-body-beard_862994-1849.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      },
+      {
+        "id": 12,
+        "name": "Architecture Photography: Capturing Structural Beauty",
+        "img": "https://img.freepik.com/free-photo/abandoned-exhibition-centre-tbilisi_181624-26807.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=ais",
+        "instructor": "Ryan Mitchell",
+        "availableSeats": 9,
+        "price": 129.99,
+        "students": 21,
+        "mentor":"https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?size=626&ext=jpg&uid=R78869183&ga=GA1.2.1249051351.1685387329&semt=sph"
+      }
+  
+    ]
+  }
