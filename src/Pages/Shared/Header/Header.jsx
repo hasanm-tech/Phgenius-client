@@ -5,7 +5,7 @@ import logo from '../../../assets/logo.png'
 const Header = () => {
     return (
         <header>
-            <div className="navbar bg-neutral py-10">
+            <div className="navbar bg-neutral py-10 fixed top-0 z-50">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost text-white btn-circle">
@@ -14,7 +14,7 @@ const Header = () => {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 space-x-4 space-y-4">
 
                         <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/instructors'>Instructors</NavLink>
+                        <NavLink to='/all-instructor'>Instructors</NavLink>
                         <NavLink to='/Classes'>Classes</NavLink>
                         <NavLink to='/Classes'>Dashboard</NavLink>
                         

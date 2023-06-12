@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const Instructors = () => {
+const AllInstructors = () => {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
@@ -20,17 +20,12 @@ const Instructors = () => {
     return <p>No classes available</p>;
   }
 
-  // Sort classes based on the number of students in descending order
-  const sortedClasses = [...classes].sort((a, b) => b.students - a.students);
-
-  // Get the top 6 classes
-  const topClasses = sortedClasses.slice(0, 6);
 
   return (
-    <div className='container mx-auto py-20 text-center'>
-      <h2 className='text-4xl font-semibold py-10'> Top Instructors </h2>
+    <div className='container mx-auto py-40 text-center'>
+      <h2 className='text-4xl font-semibold py-20'> Top Instructors </h2>
       <div className='grid md:grid-cols-3 grid-cols-2 gap-20'>
-      {topClasses.map((instructor) => (
+      {classes.map((instructor) => (
         <>
         
 
@@ -39,7 +34,7 @@ const Instructors = () => {
                 <img className='w-[373px] h-[249px] object-cover' src={instructor.mentor} alt="" />
             </div>
             <p className='text-xl font-semibold'>Instructor: {instructor.instructor}</p>
-            <p>Students: {instructor.students}</p>
+            <p>Students: {instructor.email}</p>
         </div>
 
         </>
@@ -49,4 +44,5 @@ const Instructors = () => {
   );
 };
 
-export default Instructors;
+export default AllInstructors;
+

@@ -44,7 +44,7 @@ export default function App() {
         {
             slides.map((slide,index) => <SwiperSlide key={index}> 
             
-             <div className="bg-black opacity-90 flex flex-col items-center justify-center" style={{ backgroundImage: `url(${slide.image})`, height:'85vh',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'  }} >
+             <div className="bg-black opacity-90 flex flex-col items-center z-0 justify-center mt-20" style={{ backgroundImage: `url(${slide.image})`, height:'90vh',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'  }} >
 
                 <div className="bg-[#04040466] p-20 py-40 text-center space-y-4">
                 <h2 className="text-4xl font-semibold text-[#ddd]"> {slide.title}</h2>
