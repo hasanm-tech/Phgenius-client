@@ -29,14 +29,14 @@ const PopularClasses = () => {
   return (
     <div className='container mx-auto py-20 text-center'>
       <h2 className='text-4xl font-semibold py-10'>Popular Classes</h2>
-      <div className='grid grid-cols-3 gap-20'>
+      <div className='grid md:grid-cols-3 grid-cols-1 text-center gap-20'>
       {topClasses.map((classItem) => (
         <>
         
 
         <div className='space-y-4' key={classItem.id}>
             <div>
-                <img className='w-[373px] h-[249px] object-cover' src={classItem.img} alt="" />
+                <img className='w-[373px] h-[249px] object-cover m-auto' src={classItem.img} alt="" />
             </div>
           <h3 className='text-xl font-semibold'> {classItem.name}</h3>
           <p>available Seat : {classItem.availableSeats}</p>

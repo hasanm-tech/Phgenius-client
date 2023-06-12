@@ -29,7 +29,7 @@ const Instructors = () => {
   return (
     <div className='container mx-auto py-20 text-center'>
       <h2 className='text-4xl font-semibold py-10'> Top Instructors </h2>
-      <div className='grid grid-cols-3 gap-20'>
+      <div className='grid md:grid-cols-3 grid-cols-2 gap-20'>
       {topClasses.map((classItem) => (
         <>
         

@@ -1,0 +1,7 @@
+.partner img{
+    filter:grayscale(1);
+    transition: 0.2s all ease-in-out;
+}
+.partner img:hover{
+    filter:grayscale(0)
+}
