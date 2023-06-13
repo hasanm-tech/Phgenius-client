@@ -12,10 +12,12 @@ const AddClass = () => {
         const instructor = form.instructor.value;      
         const email = form.email.value;      
         const img = form.img.value;      
-        const seats = form.seats.value;        
+        const seats = form.seats.value;   
+        const price = form.price.value;   
+             
         console.log(name,instructor,email,img,seats)
 
-        const classInfo = {name : name, instructor:instructor, email:email, img:img, seats:seats}
+        const classInfo = {name : name, instructor:instructor, email:email, img:img, seats:seats, price:price}
 
         fetch('http://localhost:5000/add-classes', {
             method: "POST",
@@ -68,6 +70,10 @@ const AddClass = () => {
 
                     <div className="form-control">
                     <input name="seats" type="text" placeholder="Available seats" className="input input-bordered" />
+                    </div>
+
+                    <div className="form-control">
+                    <input name="price" type="text" placeholder="price" className="input input-bordered" />
                     </div>
 
 
