@@ -1,0 +1,56 @@
+import useAddClasses from "../../Hooks/useAddClasses";
+
+const ManageClasses = () => {
+  const [addClasses] = useAddClasses();
+  return (
+    <>
+      <div>
+        <h2 className="text-4xl py-10">My Classes {addClasses?.length}</h2>
+      </div>
+      <div className="overflow-x-auto ">
+        <table className="table table-zebra">
+          {/* head */}
+          <thead>
+            <tr className="bg-[#de3a3a]">
+              <th>#</th>
+              <th>className</th>
+              <th>class image</th>
+              <th>instructor name</th>
+              <th className="">instructor email</th>
+              <th>price</th>
+              <th>available seat</th>
+              <th>status</th>
+              <th>status</th>
+              <th>status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            {addClasses.map((classItem, index) => (
+              <tr key={classItem._id}>
+                <th>{index + 1}</th>
+                <td className="pr-10">{classItem.name}</td>
+                <td className="pr-10">
+                  <img src={classItem.img} alt="" className="w-10 object-cover" />
+                </td>
+                <td className="pr-10">{classItem.instructor}</td>
+                <td className="pr-10">{classItem.email}</td>
+                <td className="pr-10">{classItem.price}</td>
+                <td className="pr-10">{classItem.seats}</td>
+                <td className="pr-10">0</td>
+                <td className="pr-10">
+                  <button className="btn btn-xs">pending</button>
+                </td>
+                <td className="pr-10">
+                  <button className="btn btn-xs">Feedback</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+};
+
+export default ManageClasses;
