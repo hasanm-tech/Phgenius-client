@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from './../../../Provider/AuthProvider';
 import Swal from "sweetalert2";
 
 const Google = () => {
     const {googleLogin} = useContext(AuthContext)
     const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/';
     const handleGoogle = () => {
         googleLogin()
         .then(res =>{
@@ -18,7 +20,7 @@ const Google = () => {
                 showConfirmButton: false,
                 timer: 1500
               })
-            navigate('/')
+              navigate(from, {replace : true})
 
         //     const savedUser = {name: loggedUser.displayName, email: loggedUser.email}
 
@@ -39,8 +41,8 @@ const Google = () => {
         
     }
     return (
-        <div className="py-10">
-            <h2>Sign With ------ <button onClick={handleGoogle} className="btn  bg-red-800"> Google</button></h2>
+        <div className="py-10 text-center">
+            <h2>Sign With <button onClick={handleGoogle} className="btn bg-neutral text-white"> Google</button></h2>
         </div>
     );
 };

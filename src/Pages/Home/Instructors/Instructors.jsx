@@ -8,7 +8,7 @@ const Instructors = () => {
     fetch('classes.json')
       .then((response) => response.json())
       .then((data) => {
-        setClasses(data.classes);
+        setClasses(data);
       })
       .catch((error) => {
         console.error('Error fetching class data:', error);

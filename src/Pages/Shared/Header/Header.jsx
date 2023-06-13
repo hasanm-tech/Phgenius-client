@@ -6,8 +6,14 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Header = () => {
     
-    const {user} = useContext(AuthContext)
+    const {user, logOut} = useContext(AuthContext)
     console.log(user)
+    
+  const handleLogout = () => {
+    logOut()
+    .then(() => {})
+    .catch(err => console.log(err))
+  }
     return (
         <header>
             <div className="navbar bg-neutral py-6 fixed top-0 z-50">
@@ -21,7 +27,7 @@ const Header = () => {
                         <NavLink to='/'>Home</NavLink>
                         <NavLink to='/all-instructor'>Instructors</NavLink>
                         <NavLink to='/all-classes'>Classes</NavLink>
-                        <NavLink to='/Classes'>Dashboard</NavLink>
+                        <NavLink to='/dashboard'>Dashboard</NavLink>
                         
                     </ul>
                     </div>
@@ -35,12 +41,15 @@ const Header = () => {
                 <div className="navbar-end text-white text-xl mr-4">
                     {
                         user? <>
+                        <div className="space-x-4 flex justify-between">
                         <NavLink className="">
                             <img className="w-10 h-10 rounded-xl" src={user.photoURL} alt="" />
                         </NavLink>
+                        <button onClick={handleLogout}><NavLink to='/'> Logout  </NavLink></button>
+                        </div>
                         </>
                         : 
-                        <NavLink to='/'> Login </NavLink>
+                        <NavLink to='/login'> Login </NavLink>
                     }
                 </div>
             </div>
