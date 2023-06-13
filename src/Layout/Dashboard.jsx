@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { NavLink, Outlet } from "react-router-dom";
 const isAdmin = true;
 const isInstructor = true;
@@ -23,8 +24,14 @@ const Dashboard = () => {
                 {
                     isAdmin ?
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>       Manage Class  </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> Manage User  </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>     
+                    <Fade>
+                    Manage Class  
+                    </Fade>
+                    </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
+                    Manage User  
+                    </Fade> </NavLink>
 
                    
                     </>
@@ -32,10 +39,18 @@ const Dashboard = () => {
                     :
 
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>       My Selected Classes  </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> My Enrolled Classes</NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>  <Fade>
+                    My Selected Classes  
+                    </Fade>    </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
+                    Enrolled Classes 
+                    </Fade>  
+                   </NavLink>
 
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> Payment:  </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> 
+                    <Fade>
+                    Payment: 
+                    </Fade>   </NavLink>
                     
                     </>
                 }
@@ -44,8 +59,12 @@ const Dashboard = () => {
 
                     isInstructor ? 
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>       Add a Class  </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> My Classes </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>      <Fade>
+                    Add a Class
+                    </Fade>  </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
+                    My Classes
+                    </Fade> </NavLink>
                     
                     </> 
                     : 
