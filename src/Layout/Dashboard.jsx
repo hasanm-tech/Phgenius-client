@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { NavLink, Outlet } from "react-router-dom";
+import { FaClipboardCheck,FaReadme,FaSimplybuilt,FaListAlt,FaIdCardAlt,FaCcAmazonPay,FaBuffer} from 'react-icons/fa';
 const isAdmin = false;
 const isInstructor = true;
 
@@ -24,14 +25,12 @@ const Dashboard = () => {
                 {
                     isAdmin ?
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>     
-                    <Fade>
-                    Manage Class  
-                    </Fade>
-                    </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
-                    Manage User  
-                    </Fade> </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaListAlt></FaListAlt>  <Fade>
+                     Manage Class
+                    </Fade>    </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaIdCardAlt></FaIdCardAlt>  <Fade>
+                     Manage user
+                    </Fade>    </NavLink>
 
                    
                     </>
@@ -39,18 +38,16 @@ const Dashboard = () => {
                     :
 
                     <>
-                    <NavLink to="/dashboard/selected-classes" className="p-2 bg-[#ba1a1ad3] text-xl">  <Fade>
-                    My Selected Classes  
+                    <NavLink to="/dashboard/selected-classes" className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaClipboardCheck></FaClipboardCheck>  <Fade>
+                     My Selected Classes  
                     </Fade>    </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
-                    Enrolled Classes 
-                    </Fade>  
-                   </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3]  text-xl flex items-center space-x-4"> <FaSimplybuilt></FaSimplybuilt>  <Fade>
+                     Enrolled Class
+                    </Fade>    </NavLink>
 
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> 
-                    <Fade>
-                    Payment: 
-                    </Fade>   </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaCcAmazonPay></FaCcAmazonPay>  <Fade>
+                     payment
+                    </Fade>    </NavLink>
                     
                     </>
                 }
@@ -59,12 +56,12 @@ const Dashboard = () => {
 
                     isInstructor ? 
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>      <Fade>
-                    Add a Class
-                    </Fade>  </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>
-                    My Classes
-                    </Fade> </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaReadme></FaReadme>  <Fade>
+                     Add a class
+                    </Fade>    </NavLink>
+                    <NavLink className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaBuffer></FaBuffer>  <Fade>
+                    My classes
+                    </Fade>    </NavLink>
                     
                     </> 
                     : 
