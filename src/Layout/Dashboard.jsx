@@ -56,10 +56,11 @@ const Dashboard = () => {
 
                     isInstructor ? 
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaReadme></FaReadme>  <Fade>
+                    <NavLink to='add-class' className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaReadme></FaReadme>  <Fade>
                      Add a class
                     </Fade>    </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaBuffer></FaBuffer>  <Fade>
+
+                    <NavLink to='my-classes' className="p-2 bg-[#ba1a1ad3] flex items-center space-x-4"> <FaBuffer></FaBuffer>  <Fade>
                     My classes
                     </Fade>    </NavLink>
                     
