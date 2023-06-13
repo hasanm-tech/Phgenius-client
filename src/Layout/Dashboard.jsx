@@ -1,6 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { NavLink, Outlet } from "react-router-dom";
-const isAdmin = true;
+const isAdmin = false;
 const isInstructor = true;
 
 const Dashboard = () => {
@@ -39,7 +39,7 @@ const Dashboard = () => {
                     :
 
                     <>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'>  <Fade>
+                    <NavLink to="/dashboard/selected-classes" className="p-2 bg-[#ba1a1ad3] text-xl">  <Fade>
                     My Selected Classes  
                     </Fade>    </NavLink>
                     <NavLink className="p-2 bg-[#ba1a1ad3] text-xl" to='/dashboard/'> <Fade>

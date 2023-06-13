@@ -8,6 +8,7 @@ import Register from "../Pages/Register/Register";
 import Dashboard from "../Layout/Dashboard";
 import PrivateRoute from "./PrivateRoutes";
 import Error from "../Pages/Error/Error";
+import SelectedClass from "../Pages/Dashboard/selectedClass/selectedClass";
 
 export const router = createBrowserRouter([
     {
@@ -41,7 +42,12 @@ export const router = createBrowserRouter([
     {
       path: 'dashboard',
       element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
-      
+      children: [
+        {
+          path: 'selected-classes',
+          element: <SelectedClass></SelectedClass>
+        }
+      ]
      },
      {
       path: '*',

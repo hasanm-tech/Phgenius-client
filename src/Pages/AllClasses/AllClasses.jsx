@@ -29,7 +29,7 @@ const AllClasses = () => {
 
   const handleSelect = classItem => {
     if(user){
-      const savedClass = {className :classItem.name, price: classItem.price, instructor: classItem.instructor}
+      const savedClass = {className :classItem.name, price: classItem.price, instructor: classItem.instructor,email: user?.email}
       fetch('http://localhost:5000/all-classes', {
         method: "POST",
         headers: {
