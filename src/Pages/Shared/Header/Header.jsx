@@ -1,8 +1,13 @@
 import { NavLink } from "react-router-dom";
 import logo from '../../../assets/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 
 const Header = () => {
+    
+    const {user} = useContext(AuthContext)
+    console.log(user)
     return (
         <header>
             <div className="navbar bg-neutral py-6 fixed top-0 z-50">
@@ -29,12 +34,12 @@ const Header = () => {
 
                 <div className="navbar-end text-white text-xl mr-4">
                     {
-                        // user? <>
-                        // <NavLink>
-                        //     <img src={user.img} alt="" />
-                        // </NavLink>
-                        // </>
-                        // : 
+                        user? <>
+                        <NavLink className="">
+                            <img className="w-10 h-10 rounded-xl" src={user.photoURL} alt="" />
+                        </NavLink>
+                        </>
+                        : 
                         <NavLink to='/'> Login </NavLink>
                     }
                 </div>

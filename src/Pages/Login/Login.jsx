@@ -1,12 +1,15 @@
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "./../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Google from "../Shared/Google/Google";
 import Swal from "sweetalert2";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate()
+  const location = useLocation()
+  const from = location.state?.from?.pathname || '/';
 
   const {
     register,
@@ -19,6 +22,7 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log("logged user from login", loggedUser);
+        navigate(from, {replace : true})
         Swal.fire({
             position: 'top-end',
             icon: 'success',

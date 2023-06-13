@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { signUp } = useContext(AuthContext);
+  const { signUp, userUpdate } = useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
 
   const {
@@ -42,6 +42,26 @@ const Register = () => {
         console.log(result);
         const loggedUser = result.user;
         console.log("logged user from register", loggedUser);
+        userUpdate(data.name, data.photo)
+        .then(() => {
+          // const savedUser = {name: data.name, email: data.email}
+          // fetch('http://localhost:5000/users', {
+          //   method : "POST",
+          //   headers : {
+          //     'content-type' : 'application/json'
+          //   },
+          //   body: JSON.stringify(savedUser)
+          // })
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'user login successfully',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        })
+        .catch(err => console.log(err))
+
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -54,6 +74,8 @@ const Register = () => {
         console.log("Error during sign up", error);
       });
   };
+
+  
 
   const password = watch("password");
 
