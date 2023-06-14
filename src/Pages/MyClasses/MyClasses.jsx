@@ -6,9 +6,11 @@ const MyClasses = () => {
     return (
         <>
         <div>
+
+        <p className="text-xl text-red-700 pb-4"> after added your classes from instructor panel (add a class) you can see those classes at manage classes</p>
             <h2 className="text-4xl py-10"> My Classes {addClasses?.length}</h2>
 
-
+            
 
         </div>
                 <div className="overflow-x-auto ">

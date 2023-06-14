@@ -5,7 +5,7 @@ const Instructors = () => {
 
   useEffect(() => {
     // Fetch class data from API
-    fetch('http://localhost:5000/classes')
+    fetch('https://photogenius-server.vercel.app/classes')
       .then((response) => response.json())
       .then((data) => {
         setClasses(data);

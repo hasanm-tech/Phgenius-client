@@ -19,7 +19,7 @@ const AddClass = () => {
 
         const classInfo = {name : name, instructor:instructor, email:email, img:img, seats:seats, price:price}
 
-        fetch('http://localhost:5000/add-classes', {
+        fetch('https://photogenius-server.vercel.app/add-classes', {
             method: "POST",
             headers: {
               'content-type' : 'application/json'

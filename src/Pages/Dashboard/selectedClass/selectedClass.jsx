@@ -8,7 +8,7 @@ const SelectedClass = () => {
     console.log(classes)
 
     const handleDelete = classItem => {
-        fetch(`http://localhost:5000/all-classes/${classItem._id}`, {
+        fetch(`https://photogenius-server.vercel.app/all-classes/${classItem._id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())
@@ -32,7 +32,7 @@ const SelectedClass = () => {
 
         <>
         <div>
-            <h2>{classes?.length}</h2>
+            <h2 className='text-4xl py-10'> Selected Classes  {classes?.length}</h2>
         </div>
                 <div className="overflow-x-auto ">
                 <table className="table table-zebra">

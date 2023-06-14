@@ -12,7 +12,7 @@ const AllClasses = () => {
 
   useEffect(() => { 
     // Fetch class data from API
-    fetch('http://localhost:5000/classes')
+    fetch('https://photogenius-server.vercel.app/classes')
       .then((response) => response.json())
       .then((data) => {
         setClasses(data);
@@ -30,7 +30,7 @@ const AllClasses = () => {
   const handleSelect = classItem => {
     if(user){
       const savedClass = {className :classItem.name, price: classItem.price, instructor: classItem.instructor,email: user?.email}
-      fetch('http://localhost:5000/all-classes', {
+      fetch('https://photogenius-server.vercel.app/all-classes', {
         method: "POST",
         headers: {
           'content-type' : 'application/json'
