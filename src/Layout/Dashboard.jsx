@@ -30,7 +30,7 @@ const Dashboard = () => {
                     <NavLink to='manage-classes' className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaListAlt></FaListAlt>  <Fade>
                      Manage Class
                     </Fade>    </NavLink>
-                    <NavLink className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaIdCardAlt></FaIdCardAlt>  <Fade>
+                    <NavLink to='manage-user' className="p-2 bg-[#ba1a1ad3] text-xl flex items-center space-x-4"> <FaIdCardAlt></FaIdCardAlt>  <Fade>
                      Manage user
                     </Fade>    </NavLink>
 

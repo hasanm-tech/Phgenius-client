@@ -1,12 +1,13 @@
 import { useForm } from "react-hook-form";
 import { useContext, useState } from "react";
 import { AuthContext } from './../../Provider/AuthProvider';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
   const { signUp, userUpdate } = useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
+  const navigate = useNavigate()
 
   const {
     register,
@@ -44,14 +45,16 @@ const Register = () => {
         console.log("logged user from register", loggedUser);
         userUpdate(data.name, data.photo)
         .then(() => {
-          // const savedUser = {name: data.name, email: data.email}
-          // fetch('http://localhost:5000/users', {
-          //   method : "POST",
-          //   headers : {
-          //     'content-type' : 'application/json'
-          //   },
-          //   body: JSON.stringify(savedUser)
-          // })
+
+          const savedUser = {name: data.name, email: data.email}
+          fetch('http://localhost:5000/users', {
+            method : "POST",
+            headers : {
+              'content-type' : 'application/json'
+            },
+            body: JSON.stringify(savedUser)
+          })
+
           Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -69,6 +72,7 @@ const Register = () => {
             showConfirmButton: false,
             timer: 1500
           })
+          navigate('/')
       })
       .catch((error) => {
         console.log("Error during sign up", error);

@@ -12,7 +12,20 @@ const Google = () => {
         googleLogin()
         .then(res =>{
             const loggedUser = res.user;
-            console.log(loggedUser);
+
+
+            const savedUser = {name: loggedUser.displayName, email: loggedUser.email}
+
+            
+          fetch('http://localhost:5000/users', {
+            method : "POST",
+            headers : {
+              'content-type' : 'application/json'
+            },
+            body: JSON.stringify(savedUser)
+          })
+          .then(res => res.json())
+          .then(() => {
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
@@ -21,22 +34,11 @@ const Google = () => {
                 timer: 1500
               })
               navigate(from, {replace : true})
+          })
 
-        //     const savedUser = {name: loggedUser.displayName, email: loggedUser.email}
 
-            
-        //   fetch('http://localhost:5000/users', {
-        //     method : "POST",
-        //     headers : {
-        //       'content-type' : 'application/json'
-        //     },
-        //     body: JSON.stringify(savedUser)
-        //   })
-        //   .then(res => res.json())
-        //   .then(() => {
-        //         navigate('/')
-        //   })
-        
+
+
         })
         
     }
