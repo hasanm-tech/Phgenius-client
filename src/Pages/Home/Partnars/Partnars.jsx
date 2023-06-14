@@ -9,7 +9,7 @@ const Partners = () => {
         <div className="container m-auto py-20 ">
 
             <h2 className='text-4xl pb-10 pl-10'>Trusted by our awesome partners</h2>
-            <div className='grid md:grid-cols-4 grid-cols-2 partner'>
+            <div className='grid md:grid-cols-4 grid-cols-2 gap-4 partner'>
                 <img className='m-auto 'src={logo1} alt="" />
                 <img className='m-auto'src={logo2} alt="" />
                 <img className='m-auto'src={logo3} alt="" />
