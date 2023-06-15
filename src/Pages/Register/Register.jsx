@@ -47,7 +47,7 @@ const Register = () => {
         .then(() => {
 
           const savedUser = {name: data.name, email: data.email}
-          fetch('https://photogenius-server.vercel.app/users', {
+          fetch('https://photogenius-server-hasanm-tech.vercel.app/users', {
             method : "POST",
             headers : {
               'content-type' : 'application/json'

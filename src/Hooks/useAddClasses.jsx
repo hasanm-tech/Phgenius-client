@@ -9,7 +9,7 @@ const useAddClasses = () => {
 
         queryKey: ['addClasses', user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://photogenius-server.vercel.app/add-classes?email=${user?.email}`)
+            const res = await fetch(`https://photogenius-server-hasanm-tech.vercel.app/add-classes?email=${user?.email}`)
             return res.json()
           },
     })

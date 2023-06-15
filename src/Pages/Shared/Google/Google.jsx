@@ -17,7 +17,7 @@ const Google = () => {
             const savedUser = {name: loggedUser.displayName, email: loggedUser.email}
 
             
-          fetch('https://photogenius-server.vercel.app/users', {
+          fetch('https://photogenius-server-hasanm-tech.vercel.app/users', {
             method : "POST",
             headers : {
               'content-type' : 'application/json'
