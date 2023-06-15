@@ -8,7 +8,7 @@ const SelectedClass = () => {
     console.log(classes)
 
     const handleDelete = classItem => {
-        fetch(`https://photogenius-server-hasanm-tech.vercel.app/all-classes/${classItem._id}`, {
+        fetch(`https://photogenius-server.vercel.app/all-classes/${classItem._id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

@@ -5,7 +5,7 @@ const ManageUsers = () => {
 
     const [users, setUsers] = useState([])
     useEffect(()  => {
-        fetch('https://photogenius-server-hasanm-tech.vercel.app/users')
+        fetch('https://photogenius-server.vercel.app/users')
         .then(res => res.json())
         .then(data => setUsers(data))
     },[])
